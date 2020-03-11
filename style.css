@@ -17,6 +17,31 @@ h1 {
     text-shadow: 3px 3px 3px black;
 }
 
+h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 1px 1px black;
+}
+
+h3 {
+    font-size: 1.8rem;
+    text-shadow: 2px 1px 1px black;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+ol,
+ul {
+    margin-bottom: 40px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
 .main-header {
     background: linear-gradient(rgb(243, 199, 79), transparent 0%),
               linear-gradient(0deg, #fff, transparent 50% ),
@@ -28,8 +53,14 @@ h1 {
     text-align: center;
 }
 
-.primary-content {
+.primary-content,
+.main-header,
+.main-footer {
     text-align: center;
+}
+
+.main-footer {
+    border-bottom: 10px solid rgb(11, 117, 204);
 }
 
 .intro {
@@ -39,7 +70,7 @@ h1 {
 
 .callout {
     font-size: 1.3em;
-    border-bottom: 3px solid darkcyan;
+    border-bottom: 3px solid rgb(11, 117, 204);
     display: inline-block;
 }
 
@@ -51,10 +82,77 @@ h1 {
     padding-bottom: 8px;
 }
 
-.arrow {
-    width: 50px;
-}
+
 
 .t-border {
     border-top: 2px solid grey;
+}
+
+/* Layout styles */ 
+
+.primary-content,
+.secondary-content {
+    width: 75%;
+    margin: auto;
+    padding: 70px 50px;
+    max-width: 960px;
+}
+
+.fauna-flora {
+    color: white;
+    background: url('img/faunaflora.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: inset 0 0 50px 10px rgba(0,0,0, .8);
+    text-align: left;
+    padding: 18% 24%;
+    margin: 100px 0 70px;
+    border-top: 10px solid rgb(11, 117, 204);
+}
+
+.arrow {
+    width: 50px;
+    margin-top: 50px;
+}
+
+/* Floated columns */ 
+
+.environmental, 
+.ecotourism {
+    width: 46.5%;
+}
+
+.ecotourism {
+    float: left;
+}
+
+.environmental {
+    float: right;
+}
+
+/* Float clearfix */ 
+
+.group:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Pseudo clases */ 
+
+a:link {
+    color: rgb(11, 117, 204);
+    text-decoration: none;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: rgba(255, 169, 73, .4);
+}
+  
+a:active {
+    color: lightcoral;
 }
