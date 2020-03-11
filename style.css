@@ -156,3 +156,31 @@ a:hover {
 a:active {
     color: lightcoral;
 }
+
+/* Media querries - responsive web design */
+
+@media (max-width: 1024px) {
+    .primary-content,
+    .secondary-content {
+        width: 90%;
+    }
+
+    .fauna-flora {
+        padding: 10% 12%;
+        margin: 50px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .primary-content,
+    .secondary-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .environmental,
+    .ecotourism {
+        float: none;
+        width: 100%;
+    }
+}
